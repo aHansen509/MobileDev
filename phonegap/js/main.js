@@ -12,10 +12,19 @@ $(document).ready( function(){
     })
 });
 
-
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
+    function onSuccess(contact) {
+        alert("Save Success");
+    };
+
+    function onError(contactError) {
+        alert("Error = " + contactError.code);
+    };
+    
     var phoneNum = new ContactField('work', '509-555-5555', true);
     var myContact = navigator.contacts.create({"displayName": "NomNom Pizza", "phoneNumbers": phoneNum });
+    myContact.save(onSuccess,onError)
 }
+
