@@ -12,3 +12,10 @@ $(document).ready( function(){
     })
 });
 
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    var phoneNum = new ContactField('work', '509-555-5555', true);
+    var myContact = navigator.contacts.create({"displayName": "NomNom Pizza", "phoneNumbers": phoneNum });
+}
