@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+    <link rel="stylesheet" href="css/themes/mobile-theme.css"/>
+
+    <!-- Extra Codiqa features -->
+    <link rel="stylesheet" href="css/codiqa.ext.css">
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- jQuery and jQuery Mobile -->
+    <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+    <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+    <!-- Extra Codiqa features -->
+    <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<!-- Call Us -->
+<div data-role="page" id="callUs">
+    <div data-theme="" class="navbar" data-role="header" data-id="navbar" data-position="fixed">
+        <h3 class="navTitle">
+            NomNom's Pizza <img src="img/panda1.png">
+        </h3>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#callUs" class="ui-btn-active ui-state-persist">Call Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+        </ul>
+    </div>
+    <!-- /navbar -->
+
+    <div data-role="content" id="call">
+        <div id="callNumber">
+            <h2>Call Us!</h2>
+            <a href="tel:1-509-555-5555" data-role="button">(509)555-5555</a>
+        </div>
+        <div id="panPic">
+            <img src="img/pandaPizza.jpg" alt="Panda helping make an order">
+        </div>
+    </div>
+
+    <div data-theme="" data-role="footer" data-position="fixed">
+        <h3>
+            NomNom's Pizza &copy;2013
+        </h3>
+    </div>
+</div>
+
+<!-- Menu -->
+<div data-role="page" id="menu">
+    <div data-theme="" class="navbar" data-role="header" data-id="navbar" data-position="fixed">
+        <h3 class="navTitle">
+            NomNom's Pizza <img src="img/panda1.png">
+        </h3>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#callUs">Call Us</a></li>
+            <li><a href="#menu" class="ui-btn-active ui-state-persist">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+        </ul>
+    </div>
+    <!-- /navbar -->
+
+    <div data-role="content">
+        <div data-role="collapsible-set" data-inset="false" id="menuItems">
+            <div data-role="collapsible">
+                <h2>Sizes</h2>
+                <ul>
+                    <li>Small(6")</li>
+                    <li>Medium(10")</li>
+                    <li>Large(14")</li>
+                    <li>Xtra Large(24")</li>
+                    <li>Ridiculous(36")</li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h2>Sauces</h2>
+                <ul>
+                    <li>Zesty Tomato</li>
+                    <li>White Garlic</li>
+                    <li>Spicy BBQ</li>
+                    <li>Bob's Super Hot</li>
+                    <li>Tangy Peanut</li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h2>Meats</h2>
+                <ul>
+                    <li>Pepperoni</li>
+                    <li>Bacon</li>
+                    <li>Sausage</li>
+                    <li>Chicken</li>
+                    <li>Canadian Bacon</li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h2>Not Meats</h2>
+                <ul>
+                    <li>Black Olives</li>
+                    <li>Onions</li>
+                    <li>Green Peppers</li>
+                    <li>Pineapple</li>
+                    <li>Sun-Dried Tomatoes</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img src="img/panda.png">
+        </div>
+    </div>
+    <div data-lieme="" data-role="footer" data-position="fixed">
+        <h3>
+            NomNom's Pizza &copy;2013
+        </h3>
+    </div>
+</div>
+
+<!-- Order -->
+<div data-role="page" id="order">
+    <div data-theme="" class="navbar" data-role="header" data-id="navbar" data-position="fixed">
+        <h3 class="navTitle">
+            NomNom's Pizza <img src="img/panda1.png">
+        </h3>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#callUs">Call Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order" class="ui-btn-active ui-state-persist">Order</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+        </ul>
+    </div>
+    <!-- /navbar -->
+
+    <div data-role="content">
+        <fieldset data-role="controlgroup">
+            <legend>Size:</legend>
+            <label for="sizeS">Small
+            <input type="radio" name="size" id="sizeS" value="sz-small"></label>
+            <label for="sizeM">Medium
+            <input type="radio" name="size" id="sizeM" value="sz-medium"></label>
+            <label for="sizeL">Large
+            <input type="radio" name="size" id="sizeL" value="sz-large"></label>
+            <label for="sizeX">Xtra Large
+            <input type="radio" name="size" id="sizeX" value="sz-xlarge"></label>
+            <label for="sizeR">Ridiculous
+            <input type="radio" name="size" id="sizeR" value="sz-riciulous"></label>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+            <legend>Sauce:</legend>
+            <label for="sauceT">Zesty Tomato
+            <input type="radio" name="sauce" id="sauceT" value="sa-tomato"></label>
+            <label for="sauceG">White Garlic
+            <input type="radio" name="sauce" id="sauceG" value="sa-garlic"></label>
+            <label for="sauceB">Spicy BBQ
+            <input type="radio" name="sauce" id="sauceB" value="sa-bbq"></label>
+            <label for="sauceH">Bob's Super Hot
+            <input type="radio" name="sauce" id="sauceH" value="sa-hot"></label>
+            <label for="sauceP">Tangy Peanut
+            <input type="radio" name="sauce" id="sauceP" value="sa-peanut"></label>
+
+        </fieldset>
+        <fieldset data-role="controlgroup">
+            <legend>Meats:</legend>
+            <input type="checkbox" name="meatPep" id="meatPep" checked="">
+            <label for="meatPep">Pepperoni</label>
+            <input type="checkbox" name="meatBac" id="meatBac">
+            <label for="meatBac">Bacon</label>
+            <input type="checkbox" name="meatSau" id="meatSau">
+            <label for="meatSau">Sausage</label>
+            <input type="checkbox" name="meatChi" id="meatChi">
+            <label for="meatChi">Chicken</label>
+            <input type="checkbox" name="meatCan" id="meatCan">
+            <label for="meatCan">Canadian Bacon</label>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+            <legend>Non-Meats:</legend>
+            <input type="checkbox" name="vegBO" id="vegBO" checked="">
+            <label for="vegBO">Black Olives</label>
+            <input type="checkbox" name="vegOn" id="vegOn">
+            <label for="vegOn">Onions</label>
+            <input type="checkbox" name="vegGP" id="vegGP">
+            <label for="vegGP">Green Peppers</label>
+            <input type="checkbox" name="vegPi" id="vegPi">
+            <label for="vegPi">Pineapple</label>
+            <input type="checkbox" name="vegSu" id="vegSu">
+            <label for="vegSu">Sun Dried Tomatoes</label>
+        </fieldset>
+        <button class="order">Order Now!</button>
+
+    </div>
+
+    <div data-theme="" data-role="footer" data-position="fixed">
+        <h3>
+            NomNom's Pizza &copy;2013
+        </h3>
+    </div>
+</div>
+
+<!-- Location -->
+<div data-role="page" id="location">
+    <div data-theme="" class="navbar" data-role="header" data-id="navbar" data-position="fixed">
+        <h3 class="navTitle">
+            NomNom's Pizza <img src="img/panda1.png">
+        </h3>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#callUs">Call Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#location" class="ui-btn-active ui-state-persist">Location</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+        </ul>
+    </div>
+    <!-- /navbar -->
+
+    <div data-role="content">
+        <script>
+            navigator.geolocation.getCurrentPosition(function (pos) {
+                var lat = pos.coords.latitude;
+                var lng = pos.coords.longitude;
+                var url = '<a href="http://maps.google.com/maps?sadder=' + lat + ',' + lng + '&daddr=Spokane+Community+Clg+1810+N,+North+Greene+Street,+Spokane,+WA&hl=en">Your Location</a>';
+
+                var map = '<iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=' + lat + ',' + lng + '&amp;daddr=Spokane+Community+Clg+1810+N,+North+Greene+Street,+Spokane,+WA&amp;hl=en&amp;t=m&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=47.688435,-117.395016&amp;daddr=Spokane+Community+Clg+1810+N,+North+Greene+Street,+Spokane,+WA&amp;hl=en&amp;geocode=FfOq1wIduLEA-Q%3BFZh21wIdijIB-SEsAiaRK0tT2CkrxFtBSh-eVDEsAiaRK0tT2A&amp;aq=&amp;sll=47.680846,-117.380893&amp;sspn=0.024588,0.04931&amp;mra=ls&amp;ie=UTF8&amp;ll=47.680038,-117.380161&amp;spn=0.016783,0.03301&amp;t=m" style="color:#0000FF;text-align:left">View Larger Map</a></small>';
+                $("#daMap").html(map);
+            });
+        </script>
+        <div id="daMap"></div>
+
+    </div>
+
+
+    <div data-theme="" data-role="footer" data-position="fixed">
+        <h3>
+            NomNom's Pizza &copy;2013
+        </h3>
+    </div>
+</div>
+
+<!-- About Us -->
+<div data-role="page" id="aboutUs">
+    <div data-theme="" class="navbar" data-role="header" data-id="navbar" data-position="fixed">
+        <h3 class="navTitle">
+            NomNom's Pizza <img src="img/panda1.png">
+        </h3>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#callUs">Call Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#aboutUs" class="ui-btn-active ui-state-persist">About Us</a></li>
+        </ul>
+    </div>
+    <!-- /navbar -->
+
+    <div data-role="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper orci quis massa luctus sed
+            facilisis leo iaculis. Sed magna tellus, gravida eget sagittis et, euismod nec ligula. Etiam et feugiat
+            nunc. In consectetur placerat neque, ut fermentum augue feugiat sed. Nullam nec nisi neque. Sed ante nibh,
+            dapibus aliquet placerat in, tempor ut eros.</p>
+
+        <p>Mauris ac felis ante, vel venenatis lectus. Fusce non enim et
+            nibh posuere rutrum. Praesent at lacinia metus. Curabitur tellus urna, ultrices a imperdiet eget, vestibulum
+            et leo. Vestibulum et nibh ut velit aliquam viverra.</p>
+    </div>
+    <div data-theme="" data-role="footer" data-position="fixed">
+        <h3>
+            NomNom's Pizza &copy;2013
+        </h3>
+    </div>
+</div>
+
+</body>
+</html>
